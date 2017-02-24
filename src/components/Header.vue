@@ -9,7 +9,7 @@
 
             <div class="header-search scoped-search">
 
-                <div class="form-control header-search-wrapper js-chromeless-input-container">
+                <div class="form-control header-search-wrapper">
                     <div class="header-search-scope">Enter a Github Username</div>
                     <input  type="text" autocomplete="off" class="form-control header-search-input" placeholder="Search User Name"
                         v-model="userName"

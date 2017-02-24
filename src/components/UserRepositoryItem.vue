@@ -3,7 +3,7 @@
     <div class="pinned-repo-item-content">
 
         <a :href="paramRepo.html_url" class="text-bold">
-            <span class="repo js-repo" title="angular2-university-domains-list">{{paramRepo.name}}</span>
+            <span class="repo">{{paramRepo.name}}</span>
         </a>
         </span>
 
