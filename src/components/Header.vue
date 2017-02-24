@@ -19,7 +19,7 @@
 
             <ul class="header-nav float-left" role="navigation">
                 <li class="header-nav-item"><a href="https://twitter.com/_tipek" class="header-nav-link">Twitter</a> </li>
-                <li class="header-nav-item"><a class="header-nav-link" href="https://github.com/tahaipek">Github</a> </li>
+                <li class="header-nav-item"><a class="header-nav-link" href="https://github.com/tahaipek/VueJs-2-Github-Search-Profile">Github</a> </li>
             </ul>
 
         </div>
