@@ -2,6 +2,8 @@
 
 Just a simple app, made with VueJS 2.x and built with Vue Cli.
 
+ Demo => [https://tahaipek.github.io/VueJs-2-Github-Search-Profile/](https://tahaipek.github.io/VueJs-2-Github-Search-Profile/)
+
 ![enter image description here](https://raw.githubusercontent.com/tahaipek/VueJs-2-Github-Search-Profile/master/preview.png)
 
 **Change Github Api Token and build**  *./src/App.Vue*
