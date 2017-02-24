@@ -2,6 +2,8 @@
 
 Just a simple app, made with VueJS 2.x and built with Vue Cli.
 
+![enter image description here](https://raw.githubusercontent.com/tahaipek/VueJs-2-Github-Search-Profile/master/preview.png)
+
 **Change Github Api Token and build**  *./src/App.Vue*
 ```bash
 const clientId     = '<Client Id>';
