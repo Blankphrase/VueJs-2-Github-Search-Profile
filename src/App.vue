@@ -20,7 +20,27 @@
       </div>
       <div class="col-9 float-left pl-2">
 
-        <app-User-Profile-Counter :paramUserProfile="userProfile"></app-User-Profile-Counter>
+	     <app-User-Profile-Counter :paramUserProfile="userProfile"></app-User-Profile-Counter>
+		 
+		 <div class="position-relative col-12 clear-fix mt-4 border-bottom ">
+		   <p class="f6">
+		   <b>"Github Search Profile app."</b> 
+		   <br/>Just a simple app, made with VueJS 2.x and built with Vue CLI. 
+		   If you like this project, you can 
+			<a href="https://github.com/tahaipek/VueJs-2-Github-Search-Profile/fork" target="_blank" class="btn btn-sm" title="Fork your own copy of tahaipek/VueJs-2-Github-Search-Profile to your account" >
+				<svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+				Fork
+			</a>   
+			or 
+			<a href="https://github.com/tahaipek/VueJs-2-Github-Search-Profile"  target="_blank" class="btn btn-sm" title="Star tahaipek/VueJs-2-Github-Search-Profile">
+				<svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+				Star
+			</a>
+						  it on GitHub =))
+		   </p>
+	   </div>
+	  
+        
         <app-User-Repositories :userRepositories="userRepositories" ></app-User-Repositories>
 
       </div>
@@ -65,7 +85,7 @@
 
       fetchUserFromServices() {
         this.loading = true;
-        let githubUserApiurl = `http://api.github.com/users/${this.userName}?client_id=${clientId}&client_secret=${clientSecret}`;
+        let githubUserApiurl = `https://api.github.com/users/${this.userName}?client_id=${clientId}&client_secret=${clientSecret}`;
 
         fetch(githubUserApiurl)
           .then((response) => {
@@ -91,7 +111,7 @@
       },
       fetchUserRepositoriesFromServices() {
         this.loading = true;
-        let githubUserRepoApiurl = `http://api.github.com/users/${this.userName}/repos?client_id=${clientId}&client_secret=${clientSecret}`;
+        let githubUserRepoApiurl = `https://api.github.com/users/${this.userName}/repos?client_id=${clientId}&client_secret=${clientSecret}`;
 
         fetch(githubUserRepoApiurl)
           .then((response) => { return response.json() })
